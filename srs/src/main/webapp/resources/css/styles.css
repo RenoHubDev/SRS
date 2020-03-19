@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100% !important;
+	margin: 0px !important;
+}
+
+}

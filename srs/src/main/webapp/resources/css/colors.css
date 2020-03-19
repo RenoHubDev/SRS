@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.fgWhite {
+	color: #FFFFFF !important;
+}
+
+.bgWhite {
+	background: #FFFFFF !important;
+}
+
+.fgGreen {
+	color: #006B38FF !important;
+}
+
+.bgGreen {
+	background: #006B38FF !important;
+}
+
+.fgBlue {
+	color: #143C87 !important;
+}
+
+.bgBlue {
+	background: #143C87 !important;
+}
+
+.fgRed {
+	color: #891A01 !important;
+}
+
+.bgRed {
+	background: #891A01 !important;
+}
+
+.gradientLightBlue {
+	background: linear-gradient(to bottom, #0066ff 0%, #6699ff 67%);
+}
+
+.gradientLightGreen {
+	background: linear-gradient(to bottom, #33cc33 0%, #66ff66 67%);
+}
