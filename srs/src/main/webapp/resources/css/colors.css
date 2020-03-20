@@ -32,6 +32,14 @@
 	background: #891A01 !important;
 }
 
+.bglg {
+	background:   #e644a1  !important;
+}
+
+.bglg1{
+	background: linear-gradient(to bottom, #ea4ca0 30%,  #0008ff 60%)
+}
+
 .gradientLightBlue {
 	background: linear-gradient(to bottom, #0066ff 0%, #6699ff 67%);
 }

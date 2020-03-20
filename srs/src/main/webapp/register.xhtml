@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
@@ -29,42 +29,91 @@
 	<h:outputScript library="js" name="bootstrap.min.js"/>
 	
 </h:head> 
-<body> 
+<body class="bglg"> 
 	
 	<div class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<h:link styleClass="navbar-brand" value="Student Registration System" />
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<h:link outcome="index" styleClass="nav-link">
-							<i class="fa fa-home" /> Home
-						</h:link>
-					</li>
-					<li class="nav-item active">
-						<h:link outcome="register" styleClass="nav-link">
-							<i class="fa fa-user-plus" /> Register
-						</h:link>
-					</li>
-					<li class="nav-item">
-						<h:link outcome="aboutus" styleClass="nav-link">
-							<i class="fa fa-list" /> About Us
-						</h:link>
-					</li>
-				</ul>
-			</div>
+		<h:link styleClass="navbar-brand" value="Student Registration System" />
+		<div class="collapse navbar-collapse">
+		     <ul class="navbar-nav ml-auto">
+		         <li class="nav-item">
+		        	 <h:link outcome="index" styleClass="nav-link">
+		        	     <i class="fa fa-home" /> Home
+		        	 </h:link>
+		         </li>
+		         <li class="nav-item active">
+		        	 <h:link outcome="registrator" styleClass="nav-link">
+		        	 	<i class="fa fa-user-plus"/> Register
+		        	 </h:link>
+		         </li>
+		         <li class="nav-item">
+		        	<h:link outcome="aboutus" styleClass="nav-link">
+		        	 	<i class="fa fa-list"/> About As
+		        	</h:link>
+				</li>
+			</ul>
+	 	 </div>
 		</div>
 	</div>
-	
 	<div class="container-fluid mt-4">
-		<h4> 
-			<i class="fa fa-user-plus" /> Register
+		<h4>
+			<i class="fa fa-user-plus" />Register
 		</h4>
 		<h:form>
-			<div class="form"></div>
+		<div class="row border rounded m-1">
+			<div class="from-group col">
+				<label>Name</label>
+				<h:inputText styleClass="form-control" />
+			</div>
+			<div class="from-group col">
+				<label>Email</label>
+				<h:inputText styleClass="form-control" />
+			</div>
+			<div class="from-group col">
+				<label>Phone</label>
+				<h:inputText styleClass="form-control" />
+			</div>
+			<div class="form-group col">
+				<label>Gender</label>
+				<h:selectOneMenu styleClass="form-control" style="height:38px;">
+					<f:selectItem itemLabel="Male"/>
+					<f:selectItem itemLabel="Female"/>
+				</h:selectOneMenu>
+			</div>
+			</div>
+			<div class="row mt-3">
+			<div class="col-6">
+			</div>
+				<div class="col-3">
+					<h:commandLink styleClass="btn btn-danger form-control">
+						<i class="fa fa-times" /> Cancle
+					</h:commandLink>
+				</div>
+				<div class="col">
+					<h:commandLink styleClass="btn btn-primary form-control">
+						<i class="fa fa-send" /> Save
+					</h:commandLink>
+				</div>
+			</div>
+			<h:dataTable styleClass="btn btn-success table mt-3" style="height:370px;">
+				<h:column>
+					<f:facet name="header">No</f:facet>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Name</f:facet>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Email</f:facet>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Phone</f:facet>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Gender</f:facet>
+				</h:column>
+			</h:dataTable>
 		</h:form>
 	</div>
-	
 </body> 
 </html>
 
