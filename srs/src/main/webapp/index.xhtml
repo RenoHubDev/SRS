@@ -10,11 +10,13 @@
 <style>
 #banner
 {
+font-family:'Good Times';
+text-align:center;
 height:50px;background-color:#1e1e1e;
 }
-#text1{font-family:'Constantia';font-size:3vw;position:absolute;top:20%;left:20%;}
+#text1{font-family:'Libel Suit';font-size:3vw;position:absolute;top:20%;left:20%;}
 #banner h4{color:white;padding:8px;margin-left:20px;}
-#button1{transition:0.5s ease;border-radius:10px 10px 10px 10px;font-family:'Constantia';position:absolute;left:50%;outline:none;border:none;top:38%;background:grey;color:white;width:20%;height:30%;box-shadow:0px 0px 7px black;}
+#button1{transition:0.4s;border-radius:4px 4px 4px 4px;font-family:'Libel Suit';position:absolute;left:60%;outline:none;border:none;top:38%;background:#262525;color:white;width:20%;height:30%;box-shadow:0px 0px 7px black;}
 #button1:hover
 {
 box-shadow:0px 0px 0px black;
@@ -46,32 +48,35 @@ box-shadow:0px 0px 0px black;
 	
 	<div class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-		<h:link styleclass="navbar-brand" value='Student Registration System'></h:link>
+		<h:link styleclass="navbar-brand"><text style="font-family:'Libel Suit';color:white;">Student Registration System</text></h:link>
 		<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav ml-auto">
 		<li class="nav-item active">
 		<h:link outcome="index" styleClass="nav-link">
-		<i class="fa fa-home"></i>Home
+		<i class="fa fa-home"></i> Home
 		</h:link>
 		</li>
 		<li class="nav-item">
-		<h:link outcome="register" styleClass="nav-link" ><i class="fa fa-user-circle"></i>Register</h:link>
+		<h:link outcome="register" styleClass="nav-link" ><i class="fa fa-user-circle"></i> Register</h:link>
 		</li>
 		<li class="nav-item">
-		<h:link outcome="aboutus" styleClass="nav-link"><i class="fa fa-address-card"></i>About Us</h:link>
+		<h:link outcome="aboutus" styleClass="nav-link"><i class="fa fa-address-card"></i> About Us</h:link>
 		</li>
 		</ul>
 		</div>
 		</div>
 	</div>
-<div id="banner"><h4><i class="fa fa-home"></i>Home</h4></div>
+<div id="banner"><h4><i class="fa fa-home"></i> Home</h4></div>
 <div align="center" style="max-width:100%;">
 <div style="position:absolute;text-align:center;top:60%;background:rgba(0,0,0,0.2);color:White;width:100%;height:20%;"><text id="text1" >Join Us</text><button onclick="window.location.href='register.xhtml'" id="button1">Register</button></div>
 <h:graphicImage style="background-size:cover;margin-top:0%;max-width:100%;border-radius:0px 0px 0px 0px;box-shadow:0px 3px 7px Grey" value="https://www.d120.org/assets/1/18/registration.jpg"></h:graphicImage>
 </div>
-<div style="width:100%;height:500px;">
-</div>
-</body> 
+<div align="center" style="width:100%"><div style="background-color:none;border-radius:4px 4px 4px 4px;box-shadow:0px 0px 7px rgba(0,0,0,0.5);margin:2%;width:80%;height:500px;">
+</div></div>
+</body>
+<footer style="position:relative;bottom:0%;text-align:center;font-family:'Libel Suit';background:#262525;width:100%;font-size:1.5vw;">
+<text style="color:white;">Hello!This is the home page.</text>
+</footer> 
 </html>
 
 
